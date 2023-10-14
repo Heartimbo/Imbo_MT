@@ -1,0 +1,53 @@
+//Imbo - Midterm Programming Project
+#include <stdio.h>
+#include <conio.h>
+int main (void)
+a 500
+b 100
+c 50
+d 10
+e 5
+f 1
+
+{
+    int input, a, b, c, d, e, f;
+
+    printf("Enter an amount: ");
+    scanf("%d", &input);
+    system("cls");
+
+    int d1 = input%a;
+    int d2 = d1%b;
+    int d3 = d2%c;
+    int d4 = d3%d;
+    int d5 = d4%e;
+    int d6 = d5%f;
+    
+	printf("Denomination\t");
+	printf("No. of Pieces\n");
+
+	printf("P 500\t");
+	printf("%d\n", input%a);
+	printf("P 100\t");
+	printf("%d\n", d1%b);
+	printf("P 50\t");
+	printf("%d\n", d2%c);
+	printf("P 10\t");
+	printf("%d\n", d3%d);
+	printf("P 5\t");
+	printf("%d\n", d4%e);
+	printf("P 1\t");
+	printf("%d\n", d5%f);
+
+
+    if(input<1 || input>999) 
+    	printf("Warning: “The amount you entered is not acceptable. Enter a valid amount from 1 to 999 only.”");
+		getch();
+		system("cls");
+	   
+    printf("Developed By: Heart T. Imbo");
+    getch();
+    
+return 0;
+
+}
